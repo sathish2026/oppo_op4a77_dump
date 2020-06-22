@@ -1,0 +1,14 @@
+#ifdef OPLUS_FEATURE_HAPTIC_VIBRATE
+service hapticImgScreencap    /system/bin/hapticscreencap
+    class main
+    user  root
+    group root
+    disabled
+
+service hapticGetEvent    /system/bin/getevent
+    class main
+    user  root
+    group root
+    disabled
+
+#endif

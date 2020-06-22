@@ -1,0 +1,19 @@
+service apexd /system/bin/apexd
+    interface aidl apexservice
+    class core
+    user root
+    group system
+    oneshot
+    disabled # does not start with the core class
+
+service apexd-bootstrap /system/bin/apexd --bootstrap
+    user root
+    group system
+    oneshot
+    disabled
+
+service apexd-snapshotde /system/bin/apexd --snapshotde
+    user root
+    group system
+    oneshot
+    disabled

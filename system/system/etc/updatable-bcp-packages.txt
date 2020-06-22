@@ -1,0 +1,14 @@
+android.app
+android.app.role
+android.hardware.wifi
+android.media
+android.net
+android.net.ssl
+android.net.wifi
+android.os
+android.os.ext
+android.permission
+android.provider
+android.util
+android.x.net.wifi
+com.android.org.conscrypt

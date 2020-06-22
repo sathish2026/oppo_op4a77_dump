@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+    <!-- begin: List of MIIT -->
+    <default-grant-permissions package="com.coloros.backuprestore" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.android.contacts" >
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+        <permission name="android.permission.WRITE_CALL_LOG"/>
+        <permission name="android.permission.GET_ACCOUNTS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.SEND_SMS"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.android.mms" >
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.RECEIVE_MMS"/>
+        <permission name="android.permission.SEND_SMS"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.WRITE_CALL_LOG"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.calendar" >
+        <permission name="android.permission.GET_ACCOUNTS"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.WRITE_CALENDAR"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oppo.camera" >
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.alarmclock" >
+        <permission name="org.codeaurora.permission.POWER_OFF_ALARM"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oppo.music" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.filemanager" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.gallery3d" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.assistantscreen" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.ACTIVITY_RECOGNITION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.encryption" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.heytap.market" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.heytap.cloud" >
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.heytap.usercenter" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.heytap.themestore" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.finshell.wallet" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.oppo.oms" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.heytap.htms" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.heytap.browser" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.heytap.quicksearchbox" >
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.heytap.speechassist" >
+        <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.SEND_SMS"/>
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.WRITE_CALENDAR"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.WRITE_CALL_LOG"/>
+    </default-grant-permissions>
+    <!-- end: List of MIIT -->
+
+    <!-- begin: package that has no icon and no UI -->
+    <default-grant-permissions package="com.mobiletools.systemhelper" >
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.oshare" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.android.settings.intelligence" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.translate.engine" >
+        <permission name="android.permission.RECORD_AUDIO"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.wifisecuredetect" >
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.colordirectservice" >
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.sceneservice" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.RECEIVE_SMS"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.aicall" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.ocrservice" >
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <!-- may change its package name in future-->
+    <default-grant-permissions package="com.ted.number" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.WRITE_CALENDAR"/>
+    </default-grant-permissions>
+    <!-- end: package that has no icon and no UI -->
+
+    <!-- begin: package that has no icon but has UI -->
+    <default-grant-permissions package="com.coloros.findmyphone" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.SEND_SMS"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.nearme.atlas" >
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </default-grant-permissions>
+
+    <default-grant-permissions package="com.coloros.video" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+    </default-grant-permissions>
+    <!-- end: package that has no icon but has UI -->
+
+    <!-- special package-->
+    <default-grant-permissions
+        package="com.coloros.phonemanager"
+        sys_shared_or_persistent="true"></default-grant-permissions>
+
+    <default-grant-permissions
+        package="com.android.settings"
+        sys_shared_or_persistent="true"></default-grant-permissions>
+
+    <default-grant-permissions package="com.amap.android.location" >
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    </default-grant-permissions>
+</packages>

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <filter-conf>
+        <project>19065</project>
+        <version>20200228</version>
+        <isOpen>true</isOpen>
+        <filter-name>orms_core_config</filter-name>
+    </filter-conf>
+
+    <config name="information">
+        <cpu cluster="0" core="0~3" freq="300000,403200,518400,614400,691200,787200,883200,979200,1075200,1171200,1248000,1344000,1420800,1516800,1612800,1708800,1804800"/>
+        <cpu cluster="1" core="4~6" freq="710400,825600,940800,1056000,1171200,1286400,1382400,1478400,1574400,1670400,1766400,1862400,1958400,2054400,2150400,2246400,2342400,2419200"/>
+        <cpu cluster="2" core="7" freq="844800,960000,1075200,1190400,1305600,1401600,1516800,1632000,1747200,1862400,1977600,2073600,2169600,2265600,2361600,2457600,2553600,2649600,2745600,2841600"/>
+        <gpu cluster="0" core="0" freq="305000000,400000000,441600000,490000000,525000000,587000000"/>
+    </config>
+
+    <config name="thermal_cpulevel">
+        <level index="0" maxCpuCore="-1,-1,-1" maxCpuFreq="-1,2246400,2553600" ddr="-1" lpm="-1" sb="-1" fpsgo="-1" mig="50-40,50-40"/>
+        <level index="1" maxCpuCore="-1,-1,-1" maxCpuFreq="-1,2054400,2361600" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+        <level index="2" maxCpuCore="-1,-1,-1" maxCpuFreq="-1,1766400,2073600" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+        <level index="3" maxCpuCore="-1,-1,-1" maxCpuFreq="-1,1574400,1632000" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+        <level index="4" maxCpuCore="-1,-1,-1" maxCpuFreq="-1,1286400,1747200" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+        <level index="5" maxCpuCore="-1,-1,-1" maxCpuFreq="1420800,1286400,1747200" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+        <level index="6" maxCpuCore="-1,-1,-1" maxCpuFreq="614400,1056000,1305600" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+        <level index="7" maxCpuCore="-1,2,0" maxCpuFreq="1420800,1286400,-1" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+        <level index="8" maxCpuCore="-1,2,0" maxCpuFreq="1420800,1056000,-1" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+        <level index="9" maxCpuCore="-1,2,0" maxCpuFreq="614400,1056000,-1" ddr="-1" lpm="-1" sb="-1" fpsgo="-1"/>
+    </config>
+
+    <config name="thermal_gpulevel">
+        <level index="0" maxGpuCore="1" maxGpuFreq="525000000"/>
+        <level index="1" maxGpuCore="1" maxGpuFreq="490000000"/>
+        <level index="2" maxGpuCore="1" maxGpuFreq="441600000"/>
+        <level index="3" maxGpuCore="1" maxGpuFreq="400000000"/>
+        <level index="4" maxGpuCore="1" maxGpuFreq="305000000"/>
+    </config>
+
+    <config name="temperature_level">
+        <level index="0" value="0,1,2"/>
+        <level index="1" value="3,4"/>
+        <level index="2" value="5,6,7,8,9"/>
+    </config>
+
+
+    <config name="normal">
+        <boost>
+            <cpu  cluster="0">
+                <level index="0" mincore="4" minfreq="-1"/>
+                <level index="1" mincore="4" minfreq="518400"/>
+                <level index="2" mincore="4" minfreq="940800"/>
+                <level index="3" mincore="4" minfreq="1036800"/>
+                <level index="4" mincore="4" minfreq="1113600"/>
+                <level index="5" mincore="4" minfreq="1209600"/>
+                <level index="6" mincore="4" minfreq="1305600"/>
+                <level index="7" mincore="4" minfreq="1804800"/><!--max1-->
+            </cpu>
+            <cpu  cluster="1">
+                <level index="0" mincore="2" minfreq="-1"/>
+                <level index="1" mincore="2" minfreq="710400"/>
+                <level index="2" mincore="2" minfreq="1056000"/>
+                <level index="3" mincore="3" minfreq="-1"/>
+                <level index="4" mincore="3" minfreq="710400"/>
+                <level index="5" mincore="3" minfreq="940800"/>
+                <level index="6" mincore="3" minfreq="1056000"/>
+                <level index="7" mincore="3" minfreq="1171200"/>
+                <level index="8" mincore="3" minfreq="2016000"/>
+                <level index="9" mincore="3" minfreq="2323200"/>
+                <level index="10" mincore="3" minfreq="2419200"/><!--max2-->
+            </cpu>
+            <cpu  cluster="2">
+                <level index="0" mincore="-1" minfreq="844800"/>
+                <level index="1" mincore="-1" minfreq="1056000"/>
+                <level index="2" mincore="-1" minfreq="1708800"/>
+                <level index="3" mincore="-1" minfreq="2841600"/><!--max3-->
+                <level index="4" mincore="1" minfreq="2016000"/>
+                <level index="5" mincore="1" minfreq="2841600"/><!--max3-->
+            </cpu>
+            <gpu cluster="0">
+                <level index="0" mincore="-1" minfreq="305000000"/><!--max-->
+                <level index="1" mincore="1" minfreq="-1"/>
+                <level index="2" mincore="1" minfreq="305000000"/><!--max-->
+            </gpu>
+        </boost>
+        <limit>
+            <cpu  cluster="0">
+                <level index="0" maxcore="3" maxfreq="-1"/>
+            </cpu>
+            <cpu  cluster="1">
+                <level index="0" maxcore="2" maxfreq="-1"/>
+            </cpu>
+            <cpu  cluster="2">
+                <level index="0" maxcore="0" maxfreq="-1"/>
+            </cpu>
+            <gpu cluster="0">
+                <level index="0" maxcore="-1" maxfreq="305000000"/>
+            </gpu>
+        </limit>
+    </config>
+
+    <config name="powermode">
+        <mode index="1" minCpuCore="4,-1,-1" minCpuFreq="518400,710400,844800" minGpuCore="-1" minGpuFreq="-1"
+                        maxCpuCore="4,3,0" maxCpuFreq="-1,1804800,-1" maxGpuCore="1" maxGpuFreq="-1"/>
+        <mode index="2" minCpuCore="4,3,1" minCpuFreq="1804800,1862400,-1" minGpuCore="1" minGpuFreq="400000000"
+                        maxCpuCore="-1,-1,-1" maxCpuFreq="-1,-1,-1" maxGpuCore="1" maxGpuFreq="-1" sb="2" mig="60-40,80-60"/>
+        <mode index="3" minCpuCore="4,3,1" minCpuFreq="1804800,2419200,2841600" minGpuCore="1" minGpuFreq="400000000"
+                        maxCpuCore="-1,-1,-1" maxCpuFreq="-1,-1,-1" maxGpuCore="-1" maxGpuFreq="-1" sb="1" mig="60-40,80-60"/>
+        <mode index="4" minCpuCore="4,-1,-1" minCpuFreq="518400,710400,844800" minGpuCore="-1" minGpuFreq="-1"
+                        maxCpuCore="4,3,0" maxCpuFreq="-1,1804800,-1" maxGpuCore="1" maxGpuFreq="-1"/>
+    </config>
+
+
+    <config name="scene_app">
+    <scene id="0" name="ORMS_APP_SCENE_NORMAL">
+      <key frames="420" timeout="7000" launch_type="-1" dozeMode="0">32be87a9353e431f</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">53ff381d3cbc5853</key>
+      <key frames="1080" timeout="18000" launch_type="-1" dozeMode="0">7952f42a965e8290</key>
+      <key frames="780" timeout="13000" launch_type="-1" dozeMode="0">d74bb1b5b5ff79b</key>
+      <key frames="780" timeout="13000" launch_type="-1" dozeMode="0">3731788df0a571eb</key>
+      <key frames="960" timeout="16000" launch_type="-1" dozeMode="0">1278505b8938c6cc</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">48d4777186bc334e</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">25541d6939e739b7</key>
+      <key frames="960" timeout="16000" launch_type="-1" dozeMode="0">526a4e2621466de8</key>
+      <key frames="480" timeout="8000" launch_type="-1" dozeMode="0">30d50a2908479c6e</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">45f88384010e3b4</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">597e7f46b53bef01</key>
+      <key frames="480" timeout="8000" launch_type="-1" dozeMode="0">50d4250bceb25636</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">60faa5fc9a81e6ef</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">3230c5f3f4c0f077</key>
+      <key frames="1080" timeout="18000" launch_type="-1" dozeMode="0">284c84cf11b664dd</key>
+      <key frames="1200" timeout="20000" launch_type="-1" dozeMode="0">63e51ad87cda2e6d</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">67ba6a6964319de7</key>
+      <key frames="960" timeout="16000" launch_type="-1" dozeMode="0">53ba86165c2fcf0e</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">32de0c8405308d17</key>
+      <key frames="780" timeout="13000" launch_type="-1" dozeMode="0">2eaf6f432b4fb450</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">55cc5842617b3367</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">172ab1285d05e1cb</key>
+      <key frames="840" timeout="14000" launch_type="-1" dozeMode="0">389b500f899f458e</key>
+      <key frames="1800" timeout="30000" launch_type="-1" dozeMode="0">1e12c93d61a01d1f</key>
+      <key frames="780" timeout="13000" launch_type="-1" dozeMode="0">6dbe50471c697eec</key>
+      <key frames="1500" timeout="25000" launch_type="-1" dozeMode="0">4702eaef00cef21d</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">11d097da685caa48</key>
+      <key frames="420" timeout="7000" launch_type="-1" dozeMode="0">53335e264a2f332b</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">6c993d6e1ed839d8</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">6417ab7bfd5ee403</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">58537d95bf20921b</key>
+      <key frames="840" timeout="14000" launch_type="-1" dozeMode="0">25541d69397ad129</key>
+      <key frames="660" timeout="11000" launch_type="-1" dozeMode="0">5477740d1fd133a2</key>
+      <key frames="960" timeout="16000" launch_type="-1" dozeMode="0">20f9e797588ae2d8</key>
+      <key frames="420" timeout="7000" launch_type="-1" dozeMode="0">56aad53eb4bdc772</key>
+      <key frames="840" timeout="14000" launch_type="-1" dozeMode="0">37a1c7381f4b4082</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">2df676caab1bc2d7</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">752b87db306ca2de</key>
+      <key frames="1800" timeout="30000" launch_type="-1" dozeMode="0">25a07c00bd4c350d</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">bdb154082f3c466</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">5685428a99f7848f</key>
+      <key frames="840" timeout="14000" launch_type="-1" dozeMode="0">7e2863f24a8febcc</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">3808b62cdb793bc3</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">42f3f7ce6cf78fba</key>
+      <key frames="480" timeout="8000" launch_type="-1" dozeMode="0">5ec473b83cc2729d</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">5dc86b1006df28d6</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">646263c2989fdc87</key>
+      <key frames="1200" timeout="20000" launch_type="-1" dozeMode="0">62eb84f1253b6ac7</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">106cd2ccd9c8e7e2</key>
+      <key frames="420" timeout="7000" launch_type="-1" dozeMode="0">281dabdaa6b24545</key>
+      <key frames="660" timeout="11000" launch_type="-1" dozeMode="0">73ca226df174fb2</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">3e456f76219a9703</key>
+      <key frames="480" timeout="8000" launch_type="-1" dozeMode="0">35496ac25b7b6333</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">55298d77e80aa6c4</key>
+      <key frames="1140" timeout="19000" launch_type="-1" dozeMode="0">c4fe80699b5279c</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">15306b40209af72b</key>
+      <key frames="420" timeout="7000" launch_type="-1" dozeMode="0">4eccf50f4bc3bf6b</key>
+      <key frames="480" timeout="8000" launch_type="-1" dozeMode="0">451bc09cceda1942</key>
+      <key frames="840" timeout="14000" launch_type="-1" dozeMode="0">a39ba178222d316</key>
+      <key frames="480" timeout="8000" launch_type="-1" dozeMode="0">1653ed2b019a42d0</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">660ed9efa1fb63cf</key>
+      <key frames="1500" timeout="25000" launch_type="-1" dozeMode="0">3a9e6e6cba031f81</key>
+      <key frames="1080" timeout="18000" launch_type="-1" dozeMode="0">6a171431e9f3c8ab</key>
+      <key frames="1" timeout="3000" launch_type="-1" dozeMode="0">1a7c3245d769066d</key>
+      <key frames="72" timeout="3000" launch_type="-1" dozeMode="0">469eee5afc39130</key>
+      <key frames="70" timeout="1500" launch_type="-1" dozeMode="0">611f00c2107c7a39</key>
+      <key frames="19" timeout="3000" launch_type="-1" dozeMode="0">37d3a5abff04f00c</key>
+      <key frames="200" timeout="3000" launch_type="-1" dozeMode="0">78f657c18ed7d32d</key>
+      <key frames="240" timeout="4000" launch_type="-1" dozeMode="0">3c383b263836be7b</key>
+      <key frames="1500" timeout="25000" launch_type="-1" dozeMode="0">147019f8d27da6ae</key>
+      <key frames="1320" timeout="22000" launch_type="-1" dozeMode="0">a2f72ad9149140d</key>
+      <key frames="1620" timeout="27000" launch_type="-1" dozeMode="0">51e04321fd0fbcb8</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">34be4235af8a6efa</key>
+      <key frames="1200" timeout="20000" launch_type="-1" dozeMode="0">717d560b75953528</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">5ea9d0624b9de3aa</key>
+      <key frames="1860" timeout="31000" launch_type="-1" dozeMode="0">502236e8b2c0a70</key>
+      <key frames="420" timeout="7000" launch_type="-1" dozeMode="0">2f116c864b3a9406</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">31dcd85630b3852e</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">96b3d17b5bbb7f4</key>
+      <key frames="1080" timeout="18000" launch_type="-1" dozeMode="0">3a51e0ad3c899628</key>
+      <key frames="2640" timeout="44000" launch_type="-1" dozeMode="0">65c25a648f638c1b</key>
+      <key frames="1200" timeout="20000" launch_type="-1" dozeMode="0">577c6c8810ab6921</key>
+      <key frames="1860" timeout="31000" launch_type="-1" dozeMode="0">806a046550ba871</key>
+      <key frames="1800" timeout="30000" launch_type="-1" dozeMode="0">446f6e2167a45234</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">38e7729f73dea911</key>
+      <key frames="660" timeout="11000" launch_type="-1" dozeMode="0">51e04321fdfc2fe3</key>
+      <key frames="1080" timeout="18000" launch_type="-1" dozeMode="0">59e107eb3d8d492a</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">461085733cd49f33</key>
+      <key frames="660" timeout="11000" launch_type="-1" dozeMode="0">5b3006fcfd80ae34</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">4d7209adf2b928af</key>
+      <key frames="660" timeout="11000" launch_type="-1" dozeMode="0">dbf9056c4a4ea94</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">d67f5e88af8ac21</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">51e04321fe65b687</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">6d57cb752bd17282</key>
+      <key frames="1200" timeout="20000" launch_type="-1" dozeMode="0">717da3fa09ca8093</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">6aeba2741502cf80</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">65c25a6436043819</key>
+      <key frames="1200" timeout="20000" launch_type="-1" dozeMode="0">369421643774153d</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">65ae45401778c73b</key>
+      <key frames="1500" timeout="25000" launch_type="-1" dozeMode="0">5703a7525cfc8c4c</key>
+      <key frames="780" timeout="13000" launch_type="-1" dozeMode="0">7b1eb6b4c0c49701</key>
+      <key frames="1080" timeout="18000" launch_type="-1" dozeMode="0">50a084840565339b</key>
+      <key frames="1320" timeout="22000" launch_type="-1" dozeMode="0">96b3d17b5bbbb86</key>
+      <key frames="1080" timeout="18000" launch_type="-1" dozeMode="0">3aaafaadb20234e9</key>
+      <key frames="780" timeout="13000" launch_type="-1" dozeMode="0">3e74eac88204730</key>
+      <key frames="660" timeout="11000" launch_type="-1" dozeMode="0">74c12ff7073c7ac</key>
+      <key frames="480" timeout="8000" launch_type="-1" dozeMode="0">677b32d2b7c01705</key>
+      <key frames="420" timeout="7000" launch_type="-1" dozeMode="0">2b8b84d8b8bbef2c</key>
+      <key frames="1800" timeout="30000" launch_type="-1" dozeMode="0">717d964144c2fcf1</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">12ac6cf8f2ec1b53</key>
+      <key frames="240" timeout="4000" launch_type="-1" dozeMode="0">75f3cee40fbca12e</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">6ffe20a55ddd9545</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">5054912eeb375702</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">7df0190bf0867ef8</key>
+      <key frames="240" timeout="4000" launch_type="-1" dozeMode="0">5b2653f60a5cf964</key>
+      <key frames="240" timeout="4000" launch_type="-1" dozeMode="0">133771da306c76c7</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">707daf9601f23ae9</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">5bc35405eb1911de</key>
+      <key frames="180" timeout="3000" launch_type="0" dozeMode="0">5d61e4f701f616e5</key>
+      <key frames="180" timeout="3000" launch_type="0" dozeMode="1">683f63ab216fe750</key>
+      <key frames="120" timeout="2000" launch_type="0" dozeMode="1">a174cbcc715bff6</key>
+      <key frames="120" timeout="2000" launch_type="0" dozeMode="1">1a275049cd6a7cfb</key>
+      <key frames="120" timeout="2000" launch_type="0" dozeMode="1">337136a3f13da4c5</key>
+      <key frames="120" timeout="2000" launch_type="0" dozeMode="1">4a193fc64299a5cb</key>
+      <key frames="180" timeout="3000" launch_type="0" dozeMode="1">50eb3ae67ce322e7</key>
+    </scene>
+    <scene id="1" name="ORMS_APP_SCENE_MUSIC">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">2a4e6c950c995dc0</key>
+    </scene>
+    <scene id="2" name="ORMS_APP_SCENE_CAMERA">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">40e5a74e1a81f6c9</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">85a5cd337782fab</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">3694216708aa1b54</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">369421676ff62f40</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">342e3f96dd17f6c1</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">333ef67d15852ae2</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">15ff0b1d04c65bc4</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">739aa0b4d5a7969b</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">1c7ff3c366018bc3</key>
+    </scene>
+    <scene id="3" name="ORMS_APP_SCENE_BROWSER">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">56cd360b46a63d14</key>
+      <key frames="300" timeout="2000" launch_type="0" dozeMode="0">7ac14e9e1753eaf3</key>
+      <key frames="300" timeout="2000" launch_type="0" dozeMode="0">11adb06da48deb11</key>
+      <key frames="300" timeout="2000" launch_type="0" dozeMode="1">60a02c9ab0d1c576</key>
+    </scene>
+    <scene id="5" name="ORMS_APP_SCENE_HEAVY_GAME">
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">294fee4dd74f4596</key>
+    </scene>
+    <scene id="7" name="ORMS_APP_SCENE_VIDEO">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">3694216708ee717f</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">494d16ab16ee0406</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">592e158d18c24a9f</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">5a10b18d7676ccb9</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">4109448cf54a8ab5</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">17e9656a9cc7ca9d</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">13531b36830b53a6</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">2e046ec8decdd8a2</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">791ca4e0438333f</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">30314947e85fd1a7</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">4bf0c30125ec7535</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">62f1f3128750c34f</key>
+      <key frames="300" timeout="2000" launch_type="0" dozeMode="1">5d5004b9978da87a</key>
+      <key frames="300" timeout="2000" launch_type="0" dozeMode="1">6dcd179e474cca62</key>
+    </scene>
+    <scene id="8" name="ORMS_APP_SCENE_LISTVIEW">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">32511c10ea2c4487</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">3faeba5319c64f86</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">262190441346f4dd</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">6ae6ebf8696ab1e1</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">4bd8f2eb9d8f5cbc</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">2236238a93d2354b</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">10f25c83ff5fc8fe</key>
+    </scene>
+    <scene id="9" name="ORMS_APP_SCENE_GALLERY">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">32d00efb126f24f</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">31ddd776de33bea6</key>
+    </scene>
+    <scene id="10" name="ORMS_APP_SCENE_NAVIGATION">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">22ecbb340e2b681d</key>
+      <key frames="120" timeout="2000" launch_type="-1" dozeMode="0">50b84e8ee51e92e1</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">d962cd15a8103c2</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">5f8f41cd98f6c646</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">4a193fc642999c0e</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">2fe83b024436ccab</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">166a96b13a17646e</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">5feb98744fb8913d</key>
+      <key frames="60" timeout="1000" launch_type="-1" dozeMode="0">3b6ac01c8a00f454</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">438262f00ac2f918</key>
+    </scene>
+    <scene id="11" name="ORMS_APP_SCENE_EBOOK">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">1e4e96ba9c7625a7</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">43c73493c81fe234</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">2621907140ca4ad4</key>
+    </scene>
+    <scene id="12" name="ORMS_APP_SCENE_LAUNCHER">
+      <key frames="120" timeout="2000" launch_type="-1" dozeMode="0">1fed8966ef1d2c85</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">68b131b8df797e41</key>
+      <key frames="120" timeout="2000" launch_type="-1" dozeMode="0">e49fbbfbaaac977</key>
+    </scene>
+    <scene id="14" name="ORMS_APP_SCENE_IO">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">1a598b1447794c94</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">5ce1b7311cd73e01</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">48387296aca1d3cf</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">508882eeb1beebee</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">b895be4d19ba463</key>
+      <key frames="60" timeout="1000" launch_type="-1" dozeMode="0">e3be3e1bdb2f98f</key>
+      <key frames="120" timeout="2000" launch_type="-1" dozeMode="0">450b2b432430f3ab</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">4d050cd3626dc040</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">86a1d9d540351db</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">1f0a30ece6f863</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">4463473cf536f2d8</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">ded70649717ca29</key>
+      <key frames="60" timeout="1000" launch_type="-1" dozeMode="0">34363b29db55c89d</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">4957733e562b7447</key>
+    </scene>
+    <scene id="15" name="ORMS_APP_SCENE_SUPERAPP">
+      <key frames="120" timeout="2000" launch_type="0" dozeMode="1">95acf1c7f2ccb4c</key>
+      <key frames="480" timeout="8000" launch_type="0" dozeMode="1">316bac74cfa74796</key>
+      <key frames="180" timeout="3000" launch_type="0" dozeMode="1">48198db442c8acbd</key>
+      <key frames="300" timeout="2000" launch_type="0" dozeMode="1">188f6d72894c9988</key>
+      <key frames="120" timeout="2000" launch_type="-1" dozeMode="0">2e6bcd2970d78ad</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">2e172a219481443d</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">782fadde68a1db4c</key>
+      <key frames="120" timeout="2000" launch_type="-1" dozeMode="0">75ffe10a151c0f67</key>
+      <key frames="780" timeout="13000" launch_type="-1" dozeMode="0">6dcd16b3e4210dda</key>
+      <key frames="1500" timeout="25000" launch_type="-1" dozeMode="0">58f4bc351df4dd7a</key>
+      <key frames="1200" timeout="20000" launch_type="-1" dozeMode="0">10bc94529b87671c</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">a74c1864c0c20f4</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">66c690e1089b6678</key>
+      <key frames="600" timeout="10000" launch_type="-1" dozeMode="0">6dcd17952778d548</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">14e5fd29a1ead223</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">96b3d17b5b89765</key>
+      <key frames="720" timeout="12000" launch_type="-1" dozeMode="0">6dcd17202eb66223</key>
+      <key frames="240" timeout="4000" launch_type="-1" dozeMode="0">12744135c026a020</key>
+      <key frames="1200" timeout="20000" launch_type="-1" dozeMode="0">51e04321fe22225e</key>
+      <key frames="540" timeout="9000" launch_type="-1" dozeMode="0">2cc395bf5add9962</key>
+      <key frames="60" timeout="1000" launch_type="-1" dozeMode="0">78494d12ee064c6e</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">1cafa6f096a24</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">43cc9876c1743fa9</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">33c1da41eaf13243</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">6a446f5a2b1ad452</key>
+      <key frames="120" timeout="2000" launch_type="-1" dozeMode="0">4977fb9513ec084d</key>
+    </scene>
+    <scene id="16" name="ORMS_APP_SCENE_POWERSAVE">
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">56cd961c5d6b6e68</key>
+    </scene>
+    <scene id="17" name="ORMS_APP_SCENE_ORIGINAL">
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">628dede8e3ffde37</key>
+      <key frames="240" timeout="4000" launch_type="-1" dozeMode="0">49180ab99697121e</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">2054c74fa03e69b4</key>
+    </scene>
+    <scene id="18" name="ORMS_APP_SCENE_SUPERGAME">
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">4a193fc6429a6528</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">31391561f1bba0fe</key>
+      <key frames="900" timeout="15000" launch_type="0" dozeMode="0">65c25a651abd9d67</key>
+      <key frames="900" timeout="15000" launch_type="0" dozeMode="0">717da38d90dcb0ad</key>
+      <key frames="900" timeout="15000" launch_type="0" dozeMode="0">717da38d90dc9971</key>
+      <key frames="1500" timeout="25000" launch_type="-1" dozeMode="0">2ff323a4556aea65</key>
+      <key frames="1500" timeout="25000" launch_type="-1" dozeMode="0">366cc7aab8638cef</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">3ff858517de6d0aa</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">3ff858517de6d1a7</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">3ff858517de6d09b</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">2e83520518a7a95d</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">3ff858517de6caf6</key>
+      <key frames="900" timeout="15000" launch_type="-1" dozeMode="0">5d859e4abb0d9dce</key>
+      <key frames="360" timeout="6000" launch_type="-1" dozeMode="0">6fa0be8d170e0a2a</key>
+      <key frames="1500" timeout="25000" launch_type="-1" dozeMode="0">8d2a932c8b5110e</key>
+      <key frames="2040" timeout="35000" launch_type="-1" dozeMode="0">466eee197e9988e3</key>
+    </scene>
+    <scene id="20" name="ORMS_APP_SCENE_HEAVY_GPU">
+      <key frames="120" timeout="2000" launch_type="0" dozeMode="1">19ad03f1f62171e3</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">6dcd17d3595db1ab</key>
+      <key frames="180" timeout="3000" launch_type="-1" dozeMode="0">2daf25786484fbb1</key>
+      <key frames="300" timeout="2000" launch_type="-1" dozeMode="0">47b22a490ccf2c15</key>
+    </scene>
+    <scene id="21" name="ORMS_APP_SCENE_SUPERAPP_EXT">
+      <key frames="240" timeout="4000" launch_type="-1" dozeMode="0">6040d4f21457a5cf</key>
+    </scene>
+  </config>
+    <config name="scene_system">
+        <scene id="0" name="ORMS_SYSTEM_SCENE_AUDIO_PLAYBACK">
+            <key frames="-1" timeout="5000" launch_type="0" idleMode="1">2ef9228ffab418b1</key>
+        </scene>
+        <scene id="1" name="ORMS_SYSTEM_SCENE_VIDEO_PLAYBACK">
+            <key frames="-1" timeout="5000" launch_type="0" idleMode="1">6875a8bfff513b90</key>
+        </scene>
+        <scene id="2" name="ORMS_SYSTEM_SCENE_MTP">
+            <key frames="-1" timeout="5000" launch_type="0" idleMode="1">2e99afa057255aa0</key>
+        </scene>
+        <scene id="3" name="ORMS_SYSTEM_SCENE_FINGERPRINT">
+            <key frames="-1" timeout="5000" launch_type="0" idleMode="1">34cd40c2517516a3</key>
+        </scene>
+        <scene id="4" name="ORMS_SYSTEM_SCENE_INSTALLATION">
+            <key frames="-1" timeout="5000" launch_type="0" idleMode="1">5272c38fc5b4060f</key>
+        </scene>
+        <scene id="5" name="ORMS_SYSTEM_SCENE_BITMAP">
+            <key frames="-1" timeout="5000" launch_type="0" idleMode="1">442c22dd79f76d28</key>
+        </scene>
+        <scene id="6" name="ORMS_SYSTEM_SCENE_MEDIA">
+            <key frames="-1" timeout="5000" launch_type="0" idleMode="1">5c5e2371d50284bb</key>
+        </scene>
+    </config>
+    <config name="scene_id">
+        <sce id="0" name="ORMS_SYSTEM_SCENE_AUDIO_PLAYBACK"/>
+        <sce id="1" name="ORMS_SYSTEM_SCENE_VIDEO_PLAYBACK"/>
+        <sce id="2" name="ORMS_SYSTEM_SCENE_MTP"/>
+        <sce id="3" name="ORMS_SYSTEM_SCENE_FINGERPRINT"/>
+        <sce id="4" name="ORMS_SYSTEM_SCENE_INSTALLATION"/>
+        <sce id="5" name="ORMS_SYSTEM_SCENE_BITMAP"/>
+        <sce id="6" name="ORMS_SYSTEM_SCENE_MEDIA"/>
+        <sce id="7" name="ORMS_SYSTEM_SCENE_STORAGE"/>
+        <sce id="0" name="ORMS_APP_SCENE_NORMAL"/>
+        <sce id="1" name="ORMS_APP_SCENE_MUSIC"/>
+        <sce id="2" name="ORMS_APP_SCENE_CAMERA"/>
+        <sce id="3" name="ORMS_APP_SCENE_BROWSER"/>
+        <sce id="4" name="ORMS_APP_SCENE_LIGHT_GAME"/>
+        <sce id="5" name="ORMS_APP_SCENE_HEAVY_GAME"/>
+        <sce id="6" name="ORMS_APP_SCENE_BENCHMARK"/>
+        <sce id="7" name="ORMS_APP_SCENE_VIDEO"/>
+        <sce id="8" name="ORMS_APP_SCENE_LISTVIEW"/>
+        <sce id="9" name="ORMS_APP_SCENE_GALLERY"/>
+        <sce id="10" name="ORMS_APP_SCENE_NAVIGATION"/>
+        <sce id="11" name="ORMS_APP_SCENE_EBOOK"/>
+        <sce id="12" name="ORMS_APP_SCENE_LAUNCHER"/>
+        <sce id="13" name="ORMS_APP_SCENE_BOOT"/>
+        <sce id="14" name="ORMS_APP_SCENE_IO"/>
+        <sce id="15" name="ORMS_APP_SCENE_SUPERAPP"/>
+        <sce id="16" name="ORMS_APP_SCENE_POWERSAVE"/>
+        <sce id="17" name="ORMS_APP_SCENE_ORIGINAL"/>
+        <sce id="18" name="ORMS_APP_SCENE_SUPERGAME"/>
+        <sce id="19" name="ORMS_APP_SCENE_OPTIMGAME"/>
+        <sce id="20" name="ORMS_APP_SCENE_HEAVY_GPU"/>
+        <sce id="21" name="ORMS_APP_SCENE_SUPERAPP_EXT"/>
+        <sce id="22" name="ORMS_APP_SCENE_VIDEO_CALL"/>
+        <sce id="23" name="ORMS_APP_SCENE_POWER_ABNORMAL"/>
+    </config>
+
+    <config name="action">
+        <act id="0" name="ORMS_ACTION_LAUNCH"/>
+        <act id="1" name="ORMS_ACTION_COLD_LAUNCH"/>
+        <act id="2" name="ORMS_ACTION_ACTIVITY_START"/>
+        <act id="3" name="ORMS_ACTION_ACTIVITY_RESUME"/>
+        <act id="4" name="ORMS_ACTION_ACTIVITY_FINISH"/>
+        <act id="5" name="ORMS_ACTION_WINDOW_ROTATION"/>
+        <act id="6" name="ORMS_ACTION_SWIPE_V"/>
+        <act id="7" name="ORMS_ACTION_SWIPE_H"/>
+        <act id="8" name="ORMS_ACTION_DECODE"/>
+        <act id="9" name="ORMS_ACTION_COMPRESS"/>
+        <act id="10" name="ORMS_ACTION_BLUETOOTH"/>
+        <act id="11" name="ORMS_ACTION_CAMERA_OPEN"/>
+        <act id="12" name="ORMS_ACTION_CAMERA_CLOSE"/>
+        <act id="13" name="ORMS_ACTION_MTP_BOOST"/>
+        <act id="14" name="ORMS_ACTION_HARDCODER_L1"/>
+        <act id="15" name="ORMS_ACTION_HARDCODER_L2"/>
+        <act id="16" name="ORMS_ACTION_HARDCODER_L3"/>
+        <act id="17" name="ORMS_ACTION_CAMERA_PREVIEW"/>
+        <act id="18" name="ORMS_ACTION_CAMERA_CAPTURE"/>
+        <act id="19" name="ORMS_ACTION_CAMERA_VIDEO"/>
+        <act id="20" name="ORMS_ACTION_CAMERA_SLOW_720P"/>
+        <act id="21" name="ORMS_ACTION_CAMERA_SLOW_1080P"/>
+        <act id="22" name="ORMS_ACTION_CAMERA_FRONT_PREVIEW"/>
+        <act id="23" name="ORMS_ACTION_CAMERA_VIDEO_PREVIEW_60FPS"/>
+        <act id="24" name="ORMS_ACTION_CAMERA_VIDEO_PREVIEW_VIRTUAL"/>
+        <act id="25" name="ORMS_ACTION_CAMERA_VIDEO_PREVIEW_EIS"/>
+        <act id="26" name="ORMS_ACTION_CAMERA_VIDEO_EIS_60FPS"/>
+        <act id="27" name="ORMS_ACTION_CAMERA_VIDEO_4K"/>
+        <act id="28" name="ORMS_ACTION_OIFACE_GAME_LOADING"/>
+        <act id="29" name="ORMS_ACTION_OIFACE_GAME_BOOST_L1"/>
+        <act id="30" name="ORMS_ACTION_OIFACE_GAME_BOOST_L2"/>
+        <act id="31" name="ORMS_ACTION_OIFACE_GAME_BOOST_L3"/>
+        <act id="32" name="ORMS_ACTION_HYPERBOOST_GPU_BOOST"/>
+        <act id="33" name="ORMS_ACTION_HYPERBOOST_CPU_BOOST_L1"/>
+        <act id="34" name="ORMS_ACTION_HYPERBOOST_CPU_BOOST_L2"/>
+        <act id="35" name="ORMS_ACTION_HYPERBOOST_CPU_BOOST_L3"/>
+        <act id="36" name="ORMS_ACTION_HYPERBOOST_DDR_BOOST"/>
+        <act id="37" name="ORMS_ACTION_TOUCH_BOOST"/>
+        <act id="38" name="ORMS_ACTION_SCREEN_ON_BOOST"/>
+        <act id="39" name="ORMS_ACTION_INPUT_METHOD_BOOST"/>
+        <act id="40" name="ORMS_ACTION_STORAGE_BOOST"/>
+        <act id="41" name="ORMS_ACTION_UNLOCK_BOOST"/>
+        <act id="42" name="ORMS_ACTION_ANIMATION"/>
+    </config>
+
+    <config name="sceneaction">
+        <sa act="0"  screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="5"  fpsgo="-1" mig="50-40,50-40"/>
+        <sa act="1"  screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="6"  fpsgo="-1" mig="50-40,50-40"/>
+        <sa act="2"  screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="7"  fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="3"  screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,0" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="0" prio="9"  fpsgo="-1"/>
+        <sa act="4"  screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="10"  fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="5"  screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="8"  fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="6"  screen="1" ssm="0-7" sam="0-23" cbl="6,2,1" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="2" prio="3"  fpsgo="-1"/>
+        <sa act="7"  screen="1" ssm="0-7" sam="0-23" cbl="6,2,1" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="2" prio="4"  fpsgo="-1"/>
+        <sa act="8"  screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="29"  fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="9"  screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="28"  fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="10" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="27" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="11" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="11" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="12" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="12" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="13" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="30" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="14" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="31" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="15" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="32" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="16" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="33" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="17" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="14" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="18" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="13" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="19" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="15" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="20" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="20" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="21" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="21" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="22" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="16" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="23" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="22" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="24" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="23" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="25" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="24" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="26" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="25" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="27" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="26" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="28" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="17" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="29" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="34" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="30" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="35" fpsgo="-1" mig="50-40,50-40"/>
+        <sa act="31" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="36" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="32" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="37" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="33" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="38" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="34" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="39" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="35" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="40" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="36" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="41" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="37" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="0" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="38" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="18" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="39" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="1" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="40" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="42" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="41" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="2" fpsgo="-1" mig="60-40,60-40"/>
+        <sa act="42" screen="1" ssm="0-7" sam="0-23" cbl="7,10,5" cll="-1,-1,-1" gbl="-1" gll="-1" ddr="-1" lpm="0" sb="1" prio="19" fpsgo="-1" mig="60-40,60-40"/>
+    </config>
+
+    <config name="Devbw_Type">
+        <type index="0" name="DEVBW_TYPE_HWMON" val="0"/>
+        <type index="1" name="DEVBW_TYPE_MEMLAT" val="1"/>
+        <type index="2" name="DEVBW_TYPE_MAX" val="2"/>
+    </config>
+
+    <config name="Devbw_Item">
+        <item index="0" name="min_freq" val="762"/>
+        <item index="1" name="min_freq" val="2288"/>
+        <item index="2" name="min_freq" val="5931"/>
+        <item index="3" name="min_freq" val="7980"/>
+        <item index="4" name="min_freq" val="10437"/>
+        <item index="5" name="min_freq" val="12298"/>
+        <item index="6" name="min_freq" val="14236"/>
+        <item index="7" name="bw_hwmon/io_percent" val="50"/>
+        <item index="8" name="bw_hwmon/io_percent" val="68"/>
+        <item index="9" name="bw_hwmon/io_percent" val="80"/>
+        <item index="10" name="bw_hwmon/sample_ms" val="4"/>
+        <item index="11" name="bw_hwmon/sample_ms" val="10"/>
+        <item index="12" name="bw_hwmon/hyst_trigger_count" val="0"/>
+        <item index="13" name="bw_hwmon/hyst_trigger_count" val="3"/>
+        <item index="14" name="bw_hwmon/hist_memory" val="0"/>
+        <item index="15" name="bw_hwmon/hist_memory" val="20"/>
+        <item index="16" name="mem_latency/ratio_ceil" val="400"/>
+        <item index="17" name="bw_hwmon/hyst_length" val="0"/>
+    </config>
+
+    <config name="Devbw_Config">
+        <item_config index="0" name="soc:qcom,cpu-cpu-llcc-bw" type="0" configs="1,7,10,13,15"/>
+        <item_config index="1" name="soc:qcom,cpu0-cpu-llcc-lat" type="1" configs="16"/>
+        <item_config index="2" name="soc:qcom,cpu4-cpu-llcc-lat" type="1" configs="16"/>
+        <item_config index="3" name="soc:qcom,cpu0-llcc-ddr-lat" type="1" configs="0"/>
+        <item_config index="4" name="soc:qcom,cpu4-llcc-ddr-lat" type="1" configs="0"/>
+        <item_config index="5" name="soc:qcom,cpu-llcc-ddr-bw" type="0" configs="0,13,15"/>
+        <item_config index="6" name="soc:qcom,cpu-cpu-llcc-bw" type="0" configs="6,8,10,13,15"/>
+        <item_config index="7" name="soc:qcom,cpu0-llcc-ddr-lat" type="1" configs="3"/>
+        <item_config index="8" name="soc:qcom,cpu-cpu-llcc-bw" type="0" configs="6"/>
+        <item_config index="9" name="soc:qcom,cpu0-llcc-ddr-lat" type="1" configs="4"/>
+        <item_config index="10" name="soc:qcom,cpu4-llcc-ddr-lat" type="1" configs="3"/>
+        <item_config index="11" name="soc:qcom,cpu-llcc-ddr-bw" type="0" configs="4"/>
+        <item_config index="12" name="soc:qcom,cpu-cpu-llcc-bw" type="0" configs="5,12,14"/>
+        <item_config index="13" name="soc:qcom,cpu-llcc-ddr-bw" type="0" configs="2,8,10,12,14"/>
+        <item_config index="14" name="soc:qcom,cpu-cpu-llcc-bw" type="0" configs="9,11,12,14,17"/>
+        <item_config index="15" name="soc:qcom,cpu-llcc-ddr-bw" type="0" configs="9,11,12,14,17"/>
+        <item_config index="16" name="soc:qcom,cpu4-llcc-ddr-lat" type="1" configs="4"/>
+    </config>
+
+    <config name="DevbwConfigGroup">
+        <item_config_group senceid="6" configs_num="1,2,8,9,11,16"/><!--ORMS_APP_SCENE_BENCHMARK-->
+        <item_config_group senceid="12" configs_num="1,2,3,4,14,15"/><!--ORMS_APP_SCENE_LAUNCHER-->
+        <item_config_group senceid="15" configs_num="1,2,3,4,14,15"/><!--ORMS_APP_SCENE_SUPERAPP-->
+        <item_config_group senceid="126" configs_num="1,2,5,6,7,10"/><!--ORMS_ACTION_CAMERA_VIDEO_EIS_60FPS-->
+        <item_config_group senceid="120" configs_num="1,2,3,4,12,13"/><!--ORMS_ACTION_CAMERA_SLOW_720P-->
+        <item_config_group senceid="121" configs_num="1,2,3,4,12,13"/><!--ORMS_ACTION_CAMERA_SLOW_1080P-->
+        <item_config_group senceid="-1" configs_num="0,1,2,3,4,5"/><!--default-->
+    </config>
+
+    <config name="StuneItem">
+        <item index="0" name="schedtune.prefer_idle" val="0"/>
+        <item index="1" name="schedtune.prefer_idle" val="1"/>
+        <item index="2" name="input_boost_freq" val="0:1324800 4:0 7:0"/>
+        <item index="3" name="input_boost_freq" val="0:3000000 4:3000000 7:3000000"/>
+    </config>
+
+    <config name="StuneConfig">
+        <item_config index="0" name="/dev/stune/foreground"  configs="0"/>
+        <item_config index="1" name="/dev/stune/foreground"  configs="1"/>
+        <item_config index="2" name="/sys/devices/system/cpu/cpu_boost"  configs="2"/>
+        <item_config index="3" name="/sys/devices/system/cpu/cpu_boost"  configs="3"/>
+    </config>
+
+    <config name="StuneConfigGroup">
+        <item_config_group senceid="12" configs_num="0,3"/><!--ORMS_APP_SCENE_LAUNCHER-->
+        <item_config_group senceid="6" configs_num="1,3"/><!--ORMS_APP_SCENE_BENCHMARK-->
+        <item_config_group senceid="123" configs_num="1,2"/><!--ORMS_ACTION_CAMERA_VIDEO_PREVIEW_60FPS-->
+        <item_config_group senceid="126" configs_num="1,2"/><!--ORMS_ACTION_CAMERA_VIDEO_EIS_60FPS-->
+        <item_config_group senceid="118" configs_num="1"/><!--ORMS_ACTION_CAMERA_CAPTURE-->
+        <item_config_group senceid="119" configs_num="1"/><!--ORMS_ACTION_CAMERA_VIDEO-->
+        <item_config_group senceid="120" configs_num="1,2"/><!--ORMS_ACTION_CAMERA_SLOW_720P-->
+        <item_config_group senceid="121" configs_num="1,2"/><!--ORMS_ACTION_CAMERA_SLOW_1080P-->
+        <item_config_group senceid="-1" configs_num="0,2"/><!--default-->
+    </config>
+
+    <config name="SugovParaTl">
+        <item index="0" tload="80" tfreq="0"/>
+    </config>
+
+    <config name="SugovPara">
+        <item_para index="0" name="target_loads"  para="0"/>
+        <item_para index="1" name="target_loads"  para="0"/>
+        <item_para index="2" name="target_loads"  para="0"/>
+    </config>
+
+    <config name="SugovConfig">
+        <item_config index="0"  configs_num="0,1,2"/>
+    </config>
+
+    <config name="SugovConfigGroup">
+        <item_config_group senceid="0" configs_num="0"/><!--ORMS_APP_SCENE_NORMAL-->
+    </config>
+</resources>

@@ -1,0 +1,24 @@
+#/********************************************************************************
+# ** Copyright (C), 2018-2023, OPPO Mobile Comm Corp., Ltd
+# ** VENDOR_EDIT, All rights reserved.
+# **
+# ** File: - init.oppo.adbd.rc
+# ** Description:
+# **     Euclid : oppo custumize for init.oppo.adbd.rc
+# **
+# ** Version: 1.0
+# ** Date: 2019-06-05
+# ** Author: Xuefeng.Peng@PSW.AD
+# **
+# ** ------------------------------- Revision History: ----------------------------
+# ** <author>                        <data>       <version>   <desc>
+# ** ------------------------------------------------------------------------------
+#** Xuefeng.Peng@PSW.AD.0      2020-04-08   1.0         Create this moudle for adapt adbd mainline
+#********************************************************************************/
+service oppo_adbd /system/system_ext/bin/oppo_adbd --root_seclabel=u:r:su:s0
+    class core
+    socket adbd seqpacket 660 system system
+    disabled
+    seclabel u:r:adbd:s0
+
+
