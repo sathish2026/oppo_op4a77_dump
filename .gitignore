@@ -1,0 +1,12 @@
+vendor/etc/license.lic
+system/system/system_ext/app/OppoEngineerCamera/OppoEngineerCamera.apk
+system/system/apex/com.android.vndk.current.apex
+system/system/priv-app/HeyTapSpeechAssist/HeyTapSpeechAssist.apk
+system/system/priv-app/OppoGallery2/OppoGallery2.apk
+system/system/priv-app/Browser/Browser.apk
+system/system/priv-app/SystemUI/SystemUI.apk
+system/system/etc/camera/license_release.lic
+my_odm/lib64/libmegvii_superiq.so
+my_odm/etc/camera/megvii
+my_odm/etc/camera/model/license.lic
+my_odm/etc/camera/license_release_fdc.lic
