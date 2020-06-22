@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PhoneColors>
+        <!--PhoneColor.name：手机颜色的唯一标识，由项目、手软提供-->
+        <!--ColorDescription：手机颜色描述，描述手机颜色-->
+        <!--ColorDescriptionCN：手机颜色描述（中文），描述手机颜色-->
+        <!--DefaultTheme_lock :对应的锁屏壁纸-->
+        <!--DefaultTheme_system :对应的桌面壁纸-->
+        <!--ThemeDescriptionCN：主题描述（中文），描述主题名称-->
+        <!--手机颜色唯一标识、手机颜色描述由项目或手软提供，对应主题由桌面主题组根据UI要求配置-->
+        <!--该文件由OS产品中心桌面主题组维护-->
+
+    <PhoneColor name="FF6B6B6B">
+        <ColorDescription>Black</ColorDescription>
+        <ColorDescriptionCN>夜海</ColorDescriptionCN>
+        <oppo_default_dynamic_wallpaper_package_name>com.android.wallpaper.livepicker</oppo_default_dynamic_wallpaper_package_name>
+        <oppo_default_dynamic_wallpaper_class_name>com.android.wallpaper.livepicker.lwpService.Find0WallpaperService</oppo_default_dynamic_wallpaper_class_name>
+        <ThemeDescriptionCN>油滴蓝釉</ThemeDescriptionCN>
+    </PhoneColor>
+
+    <PhoneColor name="FF034688">
+        <ColorDescription>Ocean</ColorDescription>
+        <ColorDescriptionCN>碧波</ColorDescriptionCN>
+        <oppo_default_dynamic_wallpaper_package_name>com.android.wallpaper.livepicker</oppo_default_dynamic_wallpaper_package_name>
+        <oppo_default_dynamic_wallpaper_class_name>com.android.wallpaper.livepicker.lwpService.Find0WallpaperService</oppo_default_dynamic_wallpaper_class_name>
+        <ThemeDescriptionCN>油滴蓝釉</ThemeDescriptionCN>
+    </PhoneColor>
+
+    <PhoneColor name="FFCA5133">
+        <ColorDescription>Orange</ColorDescription>
+        <ColorDescriptionCN>茶橘</ColorDescriptionCN>
+        <oppo_default_dynamic_wallpaper_package_name>com.android.wallpaper.livepicker</oppo_default_dynamic_wallpaper_package_name>
+        <oppo_default_dynamic_wallpaper_class_name>com.android.wallpaper.livepicker.lwpService.Find1WallpaperService</oppo_default_dynamic_wallpaper_class_name>
+        <ThemeDescriptionCN>兔毫橙釉</ThemeDescriptionCN>
+    </PhoneColor>
+
+</PhoneColors>

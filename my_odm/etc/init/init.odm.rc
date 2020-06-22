@@ -1,0 +1,4 @@
+on fs
+   setprop ro.boot.product.hardware.sku ${ro.boot.prjname}
+   export MY_PRODUCT_SKU_ROOT /my_product/etc/${ro.boot.product.hardware.sku}
+   export MY_ODM_SKU_ROOT     /odm/etc/${ro.boot.product.hardware.sku}

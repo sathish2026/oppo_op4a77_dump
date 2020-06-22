@@ -1,0 +1,3 @@
+# build prop start
+ro.sys.heytap.test_version=cn
+ro.vendor.oppo.version=cn

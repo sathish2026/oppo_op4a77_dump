@@ -1,0 +1,5 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+    <!-- Zhengpeng.Tan@Tech.Network.Ap,2022890, 2019/10/25, Add for network health service -->
+    <feature name="oppo.nw.health.service.support"/>
+</permissions>

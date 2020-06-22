@@ -1,0 +1,4 @@
+<permissions>
+    <feature name="oppo.multimedia.surround.record.support" />
+    <feature name="oppo.multimedia.wnr.support" />
+</permissions>

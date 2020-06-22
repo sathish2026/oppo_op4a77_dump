@@ -1,0 +1,130 @@
+<!--此名单配置规则 此名单仅仅在2K 屏，智能分辨率模式下生效-->
+<!-- 1ForceFhd 表示app在 2K下显示存在异常，app需要强制缩放到1080下显示  -->
+<!--2. CompatFhd 名单表示在智能模式下使用 app缩放到1080 -->
+<!-- oppo固定density的app不能添加到CompatFhd中  -->
+<!--Display Compat mode-->
+<sys_resolution_switch_config>
+<version>20200601</version>
+<screenwidth>1440</screenwidth>
+<scaleinfo>1.3333333334,0.75,420</scaleinfo>
+<!-- app 总是在 fhd 模式 -->
+<ForceFhd>com.tiandou.gameddsk.nearme.gamecenter</ForceFhd>  <!-- BUGID: 2658445 模拟山羊-->
+<ForceFhd>com.jiuxianapk.ui</ForceFhd>  <!-- BUGID: 2636822 酒仙网-->
+<ForceFhd>com.igame.lcdcg.nearme.gamecenter</ForceFhd>  <!-- BUGID:2630571 列车大闯关-->
+<ForceFhd>com.didichuxing.drivercommunity</ForceFhd>  <!-- BUGID:26443312 谷雨 -->
+<ForceFhd>com.ertong.newui0712gzyxdq</ForceFhd>  <!-- BUGID:2614976 公主游戏大全 -->
+<ForceFhd>com.alibaba.ailabs.tg</ForceFhd>  <!-- BUGID:2628636 天猫精灵 -->
+<ForceFhd>com.example.administrator.yunsc</ForceFhd>  <!-- BUGID:2642338 云闪充 -->
+<ForceFhd>com.duoyi.m2csm.nearme.gamecenter</ForceFhd>  <!-- BUGID:2658494 传送门骑士 -->
+<ForceFhd>com.papa.fishing.nearme.gamecenter</ForceFhd>  <!-- BUGID:2664121 啪啪钓鱼 -->
+<ForceFhd>com.rybring.huabei</ForceFhd>  <!-- BUGID:2605202 借钱花呗 -->
+<ForceFhd>com.hoolai.zcfy2.nearme.gamecenter</ForceFhd>  <!-- BUGID:2653576 中超风云2 -->
+<ForceFhd>com.ewoho.citytoken</ForceFhd>  <!-- BUGID:2678691 城市令 -->
+<ForceFhd>com.newanybooks</ForceFhd>  <!-- BUGID:2735551 AnyBooks -->
+<ForceFhd>anybooks.pdf.reader.free.library.books.novels.story.download.p9</ForceFhd>  <!-- BUGID:2735551 AnyBooks -->
+<ForceFhd>com.MobileTicket</ForceFhd>  <!-- BUGID:2791651 12306 -->
+<ForceFhd>com.backstreet.real.robot.ringfight.games</ForceFhd>  <!-- BUGID:2805027 Robot Ring Fighting -->
+<!-- OPPO app 在智能分辨率模式下默认使用fhd  -->
+<CompatFhd>com.tencent.tmgp.sgame</CompatFhd>  <!--王者荣耀 1+ -->
+<CompatFhd>com.tencent.tmgp.pubgmhd</CompatFhd>  <!--和平精英 n_1+ -->
+<CompatFhd>com.happyelements.AndroidAnimal</CompatFhd>  <!-- 开心消消乐 n_1+ -->
+<CompatFhd>com.ss.android.article.news</CompatFhd>  <!-- 今日头条 n_1+ -->
+<CompatFhd>us.zoom.videomeetings</CompatFhd>  <!-- ZOOM -->
+<CompatFhd>com.tencent.af</CompatFhd>  <!--王牌战士-->
+<!-- waixiao -->
+<CompatFhd>com.t2ksports.nba2k16android</CompatFhd> <!-- NBA2K16 bugID 2791711 -->
+<CompatFhd>com.MobileTicket</CompatFhd> <!-- 铁路12306  -->
+<CompatFhd>com.mt.mtxx.mtxx</CompatFhd> <!-- 美图秀秀  -->
+<CompatFhd>com.campmobile.snowcamera</CompatFhd> <!-- B612咔叽  -->
+<CompatFhd>com.spotify.music</CompatFhd>
+<CompatFhd>com.mxtech.videoplayer.ad</CompatFhd> <!-- MX 播放器  -->
+<CompatFhd>com.nis.app</CompatFhd>
+<CompatFhd>com.kiloo.subwaysurf</CompatFhd>  <!-- 地铁跑酷 -->
+<CompatFhd>com.miHoYo.bh3</CompatFhd>
+<CompatFhd>com.tencent.tmgp.bh3</CompatFhd>
+<CompatFhd>com.miHoYo.enterprise.NGHSoD</CompatFhd>
+<CompatFhd>com.bethsoft.blade</CompatFhd>
+<CompatFhd>com.qqgame.hlddz</CompatFhd>
+<CompatFhd>com.tencent.shihun.android</CompatFhd>
+<CompatFhd>com.netease.mrzh.nearme.gamecenter</CompatFhd>
+<CompatFhd>cn.jj</CompatFhd>
+<CompatFhd>com.tencent.tmgp.sskgame</CompatFhd>
+<CompatFhd>com.netease.moba.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.pkwan.op.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.tencent.pocket</CompatFhd>
+<CompatFhd>com.happyelements.AndroidClover.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.wedobest.xiangqi.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.cmplay.dancingline.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.droidhang.ad.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.yodo1.rodeo.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.netease.stzb.nearme.gamecenter</CompatFhd>
+<CompatFhd>com.tencent.tmgp.ffom</CompatFhd>
+<CompatFhd>com.supercell.clashroyale</CompatFhd>
+<CompatFhd>com.supercell.clashofclans</CompatFhd>
+<CompatFhd>com.ludo.king</CompatFhd>
+<CompatFhd>com.h8games.helixjump</CompatFhd>
+<CompatFhd>com.word.puzzle.game.connect</CompatFhd>
+<CompatFhd>com.mindy.grap1</CompatFhd>
+<CompatFhd>com.nautilus.RealCricket3D</CompatFhd>
+<CompatFhd>com.cmplay.bricksnballs</CompatFhd>
+<CompatFhd>com.nomonkeys.ballblast</CompatFhd>
+<CompatFhd>com.fungames.sniper3d</CompatFhd>
+<CompatFhd>com.firsttouchgames.story</CompatFhd>
+<CompatFhd>com.riseup.game</CompatFhd>
+<CompatFhd>com.NikSanTech.FireDots3D</CompatFhd>
+<CompatFhd>com.brokenreality.planemerger.android</CompatFhd>
+<CompatFhd>com.playrix.gardenscapes</CompatFhd>
+<CompatFhd>com.imangi.templerun2</CompatFhd>
+<CompatFhd>com.physics.sim.game.cat</CompatFhd>
+<CompatFhd>com.bandainamcogames.dbzdokkanww</CompatFhd>
+<CompatFhd>com.my.hc.rpg.kingdom.simulator</CompatFhd>
+<CompatFhd>com.playrix.township</CompatFhd>
+<CompatFhd>com.ea.game.simcitymobile_row</CompatFhd>
+<CompatFhd>com.noodlecake.altosodyssey</CompatFhd>
+<CompatFhd>com.playgendary.tom</CompatFhd>
+<CompatFhd>com.droidhang.ad</CompatFhd>
+<CompatFhd>com.ea.game.starwarscapital_row</CompatFhd>
+<CompatFhd>com.superking.ludo.star</CompatFhd>
+<CompatFhd>com.tencent.raziel</CompatFhd>
+<CompatFhd>com.tencent.tmgp.kaopu.jzpaj</CompatFhd>
+<CompatFhd>com.netease.moba</CompatFhd>
+<CompatFhd>com.netease.moba.aligames</CompatFhd>
+<CompatFhd>com.netease.stzb.netease</CompatFhd>
+<CompatFhd>com.tencent.tmgp.stzb</CompatFhd>
+<CompatFhd>com.netease.stzb.uc</CompatFhd>
+<CompatFhd>com.Sniper3D.Gun.Shooter.Free.Shooting.Games3D</CompatFhd>
+<CompatFhd>com.gameberry.ludo.star2</CompatFhd>
+<CompatFhd>com.tencent.tmgp.sgame</CompatFhd>
+<CompatFhd>com.netease.l10</CompatFhd>
+<CompatFhd>com.tencent.tmgp.l10</CompatFhd>
+<!--not need force stop app while resolution switch-->
+<noForceStop>com.coloros.oppoguardelf</noForceStop>
+<noForceStop>com.coloros.ota</noForceStop>
+<noForceStop>com.oppo.ota</noForceStop>
+<noForceStop>com.coloros.alarmclock</noForceStop><!-- 时钟-->
+<noForceStop>com.redteamobile.roaming</noForceStop>
+<noForceStop>com.coloros.gamespace</noForceStop>
+<noForceStop>com.google.android.gms</noForceStop>
+<noForceStop>com.google.android.webview</noForceStop>
+<noForceStop>com.android.packageinstaller</noForceStop>
+<noForceStop>com.tencent.tim</noForceStop>
+<noForceStop>com.netease.mobimail</noForceStop>
+<noForceStop>com.tencent.wework</noForceStop>
+<noForceStop>com.feiliao.flipchat.android</noForceStop>
+<noForceStop>com.coloros.encryption</noForceStop>
+<noForceStop>com.google.android.configupdater</noForceStop>
+<noForceStop>com.coloros.safesdkproxy</noForceStop>
+<noForceStop>com.nearme.romupdate</noForceStop>
+<noForceStop>com.heytap.pictorial</noForceStop><!-- bugid:2710904 锁屏杂志-->
+<!-- we will forcestop app  -->
+<ForceStop>com.tencent.mm</ForceStop><!-- bugid:2787308 2690987 微信 -->
+<ForceStop>com.qiyi.video</ForceStop><!-- bugid:2781414 爱奇艺 -->
+<ForceStop>com.tencent.qqlive</ForceStop><!-- bugid:2781414 腾讯视频 -->
+<ForceStop>com.tencent.qqsports</ForceStop><!-- bugid:2781414 腾讯体育 -->
+<ForceStop>com.oppo.launcher</ForceStop><!-- bugid:2817009 OPPO桌面 -->
+<ForceStop>com.oppo.im</ForceStop><!-- bugid:2823213 teamtalk -->
+<ForceStop>com.tencent.mobileqq</ForceStop><!-- bugid:2819433 QQ -->
+<ForceStop>com.coloros.calculator</ForceStop><!-- bugid:36755 -->
+<ForceStop>com.coloros.filemanager</ForceStop><!-- 与 bugid:36755 -->
+</sys_resolution_switch_config>
+

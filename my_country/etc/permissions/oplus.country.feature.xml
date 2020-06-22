@@ -1,0 +1,8 @@
+<oplus-config>
+  <!-- HaoZhang@ROM.CommApp.MMS, 2019/9/20, add for USER 2328460 -->
+  <oplus-feature name="oplus.hardware.country.test_a" />
+  <!-- biyu.fu@Rom.phone,add for USER:2564892, 2019/12/20, add for display vowifi in calllog for Telcel and MTS-->
+  <oplus-feature name="oplus.software.country.test_b" />
+ 
+ <unavailable-oplus-feature name="oplus.software.product.test_f" />
+</oplus-config>

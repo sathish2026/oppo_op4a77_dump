@@ -1,0 +1,7 @@
+<permissions>
+	<!-- #ifdef OPLUS_FEATURE_WIFI_ASSISTANT -->
+	<!-- WangWei@CONNECTIVITY.WIFI.INTERNET, 2020/04/07,   -->
+	<!-- Add for [4490] config wlan assistant feature-->
+	<feature name="oppo.common_center.wlan.assistant" />
+	<!-- #endif //OPLUS_FEATURE_WIFI_ASSISTANT -->
+</permissions>

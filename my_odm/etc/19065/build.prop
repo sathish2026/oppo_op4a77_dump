@@ -1,0 +1,17 @@
+ro.odm.test=19065
+ro.product.model=PDEM10
+ro.product.name=PDEM10
+ro.build.fingerprint=OPPO/PDEM10/OP4A77:11/RKQ1.200507.003/1584699103:user/release-keys
+ro.system.build.fingerprint=OPPO/PDEM10/OP4A77:11/RKQ1.200507.003/1584699103:user/release-keys
+ro.product.system.model=PDEM10
+ro.product.system.name=PDEM10
+ro.bootimage.build.fingerprint=OPPO/PDEM10/OP4A77:11/RKQ1.200507.003/1584699103:user/release-keys
+ro.product.bootimage.model=PDEM10
+ro.product.bootimage.name=PDEM10
+ro.vendor.build.fingerprint=OPPO/PDEM10/OP4A77:11/RKQ1.200507.003/1584699103:user/release-keys
+ro.product.vendor.model=PDEM10
+ro.product.vendor.name=PDEM10
+ro.odm.build.fingerprint=OPPO/PDEM10/OP4A77:11/RKQ1.200507.003/1584699103:user/release-keys
+ro.product.odm.model=PDEM10
+ro.product.odm.name=PDEM10
+ro.separate.soft=19065

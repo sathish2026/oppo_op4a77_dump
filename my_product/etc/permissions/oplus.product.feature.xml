@@ -1,0 +1,7 @@
+<oplus-config>
+  <oplus-feature name="oplus.hardware.product.test_e" />
+
+  <oplus-feature name="oplus.software.product.test_f" />
+
+  <oplus-feature name="oplus.software.gesture_proximitysensor"/>
+</oplus-config>

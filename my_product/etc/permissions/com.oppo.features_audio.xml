@@ -1,0 +1,8 @@
+
+<permissions>
+    <!-- OPLUS_FEATURE_PHONE_TRANSLATOR START -->
+    <feature name="oppo.multimedia.call.translator.support" />
+    <!-- OPLUS_FEATURE_PHONE_TRANSLATOR END -->
+    <!-- Zhicheng.Luo@PSW.MultiMedia.Audio.Service.Feature.P00099505,2019/12/30,for audio features  -->
+    <feature name="oppo.multimedia.call.assistant.support" />
+</permissions>

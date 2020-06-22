@@ -1,0 +1,38 @@
+0. AI_SCN_PURECOLOR
+1. AI_SCN_LANDSCAPE    AI_SCN_UNKNOWN
+2. AI_SCN_BLUESKY    AI_SCN_GRASS    AI_SCN_BEACH
+3. AI_SCN_PLANT
+4. AI_SCN_CAT    AI_SCN_DOG
+5. AI_SCN_SUNSET
+6. AI_SCN_GOURMET
+7. AI_SCN_INDOOR
+8. AI_SCN_FLOWER
+9. AI_SCN_SNOW
+10.AI_SCN_FIREWORK
+
+typedef enum AISceneType_t {
+    AI_SCN_UNKNOWN        = 0,
+    AI_SCN_BEACH          = 1,
+    AI_SCN_BLUESKY        = 2,
+    AI_SCN_CAT            = 3,
+    AI_SCN_TEXT           = 4,
+    AI_SCN_DOG            = 5,
+    AI_SCN_FIREWORK       = 6,
+    AI_SCN_GOURMET        = 7,
+    AI_SCN_GRASS          = 8,
+    AI_SCN_INDOOR         = 9,
+    AI_SCN_INFANT         = 10,
+    AI_SCN_LANDSCAPE      = 11,
+    AI_SCN_NIGHT          = 12,
+    AI_SCN_SNOW           = 13,
+    AI_SCN_SPOTLIGHT      = 14,
+    AI_SCN_SUNSET         = 15,
+    AI_SCN_PORTRAIT       = 16,
+    AI_SCN_MULTI_PORTRAIT = 17,
+    AI_SCN_MICROSPUR      = 18,
+    AI_SCN_BACKLIGHT      = 19,
+    AI_SCN_PURECOLOR      = 20,
+    AI_SCN_MOIRE          = 21,
+    AI_SCN_FLOWER         = 22,
+    AI_SCN_PLANT          = 23
+} AISceneType;
