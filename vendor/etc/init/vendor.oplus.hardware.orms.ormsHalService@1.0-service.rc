@@ -1,0 +1,8 @@
+service orms-hal-1-0 /vendor/bin/hw/vendor.oplus.hardware.orms.ormsHalService@1.0-service
+    class hal
+    user system
+    group system readproc root
+
+on boot
+    chmod 0664 /dev/stune/foreground/schedtune.prefer_idle
+    chmod 0664 /sys/devices/system/cpu/cpu_boost/input_boost_freq
